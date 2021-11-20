@@ -1,2 +1,5 @@
 # local env to not commit
 .env.local
+
+# ignoring transmission folders for downloads config and watch
+docker/transmission
