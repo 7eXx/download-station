@@ -1,0 +1,2 @@
+# local env to not commit
+.env.local
