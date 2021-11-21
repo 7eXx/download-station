@@ -3,3 +3,6 @@
 
 # ignoring transmission folders for downloads config and watch
 docker/transmission
+
+# ignoring pyload folders download and configuration
+docker/pyload

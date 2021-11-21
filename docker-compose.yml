@@ -19,3 +19,18 @@ services:
       - ${TRANSMISSION_TCP_PORT}:51413
       - ${TRANSMISSION_UDP_PORT}:51413/udp
     restart: unless-stopped
+  
+  pyload:
+    image: lscr.io/linuxserver/pyload
+    container_name: pyload
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Rome
+    volumes:
+      - ${PYLOAD_CONFIG_PATH}:/config
+      - ${PYLOAD_DOWNLOAD_PATH}:/downloads
+    ports:
+      - ${PYLOAD_WEB_PORT}:8000
+      - ${PYLOAD_AUX_POR}:7227 #optional
+    restart: unless-stopped
