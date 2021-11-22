@@ -11,4 +11,10 @@ All these tools are implemented as docker containers.
 Use **./main.sh** to raise all services.
 
 ## Transmission
-Edit environmental variable in env file, or create a env local file.
+Edit environmental variables in env file or create a env local file.
+
+## Pyload
+Edit environmental variables in env file or create a new local one.
+Default credentials are:
+- username: admin
+- password: password
