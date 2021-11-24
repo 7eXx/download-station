@@ -1,4 +1,5 @@
 # local env to not commit
+.env.prod
 .env.local
 
 # ignoring transmission folders for downloads config and watch
@@ -6,3 +7,6 @@ docker/transmission
 
 # ignoring pyload folders download and configuration
 docker/pyload
+
+# built docker compose file
+docker-compose.yml
