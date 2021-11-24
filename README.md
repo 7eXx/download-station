@@ -9,7 +9,12 @@ This repository contains some useful tools for download:
 All these tools are implemented as docker containers.
 
 ## Pre-check
-Fill the **.env** file with custom variables or create e new **.env.prod**
+Fill the **.env** file with custom variables or create e new **.env.prod**.  
+Install python virtual env and activate it.  
+Install all dependencies
+```
+pip3 install -r requirements
+```
 
 ### Usage
 This project use python to build the template for the docker compose file.
