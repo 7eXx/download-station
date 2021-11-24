@@ -1,5 +1,0 @@
-[local]
-localhost   ansible_host=127.0.0.1      ansible_connection=ssh      ansible_user=root
-
-[nas]
-synology_nas    ansible_host=192.168.0.100      ansible_connection=ssh      ansible_user=synology
