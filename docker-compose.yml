@@ -5,8 +5,8 @@ services:
     image: lscr.io/linuxserver/transmission
     container_name: transmission
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=${USER_ID}
+      - PGID=${GROUP_ID}
       - TZ=Europe/Rome
       - USER=${TRANSMISSION_USER} #optional
       - PASS=${TRANSMISSION_PASSWORD} #optional
@@ -24,8 +24,8 @@ services:
     image: lscr.io/linuxserver/pyload
     container_name: pyload
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=${USER_ID}
+      - PGID=${GROUP_ID}
       - TZ=Europe/Rome
     volumes:
       - ${PYLOAD_CONFIG_PATH}:/config

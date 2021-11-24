@@ -1,3 +1,7 @@
+# user information
+USER_ID: 1026
+GROUP_ID: 100
+
 # Transmission Env variables
 TRANSMISSION_USER: transmission
 TRANSMISSION_PASSWORD: password
