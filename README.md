@@ -19,11 +19,11 @@ pip3 install -r requirements
 ### Usage
 This project use python to build the template for the docker compose file.
 ```
-$ python compile.py
+$ python build.py
 ```
 or
 ```
-$ python compile.py --prod PROD
+$ python build.py --prod PROD
 ```
 
 ## Transmission
@@ -34,3 +34,12 @@ Edit environmental variables in env file or create a new local one.
 Default credentials are:
 - username: admin
 - password: password
+
+## Amule
+Edit environmental variables in env file or create a new local one.
+Make sure to create the local folders for:
+- config
+- incomplete
+- complete
+
+Default behavior of emule is to not run this service.
