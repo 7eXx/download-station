@@ -8,5 +8,8 @@ docker/transmission
 # ignoring pyload folders download and configuration
 docker/pyload
 
+# ignoring amule folders
+docker/amule
+
 # built docker compose file
 docker-compose.yml
