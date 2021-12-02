@@ -2,6 +2,9 @@
 .env.prod
 .env.local
 
+# ignoring plex
+docker/plex
+
 # ignoring transmission folders for downloads config and watch
 docker/transmission
 
