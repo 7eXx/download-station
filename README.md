@@ -26,6 +26,11 @@ or
 $ python build.py --prod PROD
 ```
 
+## Plex
+Create a torrent transmission service using the variables in dot env file.  
+
+Access your server at: <your-ip>:32400/web
+
 ## Transmission
 Create a torrent transmission service using the variables in dot env file.
 

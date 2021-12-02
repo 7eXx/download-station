@@ -1,6 +1,21 @@
 ---
 version: "3.8"
 services:
+  plex:
+    imege: lscr.io/linuxserver/plex
+    container_name: plex
+    network_mode: host
+    environment:
+      - PUID={{ USER_ID }}
+      - PGID={{ GROUP_ID }}
+      - VERSIONE=docker
+      - PLEX_CLAIM={{ PLEX_CLAIM_TOKEN }}
+    volumes:
+      - {{ PLEX_CONFIG_PATH }}:/config
+      - {{ PLEX_TV_SERIES_PATH }}:/tv
+      - {{ PLEX_TV_MOVIES_PATH }}:/movies
+    restart: unless-stopped
+
   transmission:
     image: lscr.io/linuxserver/transmission
     container_name: transmission
