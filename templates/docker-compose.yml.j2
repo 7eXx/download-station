@@ -9,16 +9,7 @@ services:
       - PGID={{ GROUP_ID }}
       - VERSIONE=docker
       - PLEX_CLAIM={{ PLEX_CLAIM_TOKEN }}
-    ports:
-      - {{ PLEX_WEB_PORT }}:32400
-      - {{ PLEX_DLNA_UDP }}:1900/udp
-      - {{ PLEX_BONJOUR_UDP }}:5353/udp
-      - {{ PLEX_ROKU_TCP }}:8324
-      - {{ PLEX_GDM_UDP_1 }}:32410/udp
-      - {{ PLEX_GDM_UDP_2 }}:32412/udp
-      - {{ PLEX_GDM_UDP_3 }}:32413/udp
-      - {{ PLEX_GDM_UDP_4 }}:32414/udp
-      - {{ PLEX_DLNA_TCP }}:32469
+    network_mode: host
     volumes:
       - {{ PLEX_CONFIG_PATH }}:/config
       - {{ PLEX_TV_SERIES_PATH }}:/tv
