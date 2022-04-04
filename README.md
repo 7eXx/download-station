@@ -1,9 +1,10 @@
 
 # Download Station
-This repository contains some useful tools for download:  
+This repository contains some useful tools for download: 
+   - [x] Plex
    - [x] Transmission
    - [x] Pyload
-   - [ ] Amule
+   - [x] Amule
    - [ ] XdccDownload
 
 All these tools are implemented as docker containers.
