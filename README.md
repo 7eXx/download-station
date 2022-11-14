@@ -11,10 +11,17 @@ All these tools are implemented as docker containers.
 
 ## Pre-check
 Fill the **.env** file with custom variables or create e new **.env.prod**.  
-Install python virtual env and activate it.  
+Install python virtual env
+```
+$ python3 -m venv venv
+```
+Activate virutal env created
+```
+$ source venv/bin/activate
+```
 Install all dependencies
 ```
-pip3 install -r requirements
+$ pip3 install -r requirements
 ```
 
 ### Usage

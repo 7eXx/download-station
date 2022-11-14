@@ -1,6 +1,12 @@
+# local dependencies for python
+venv/
+
 # local env to not commit
 .env.prod
 .env.local
+
+# output dir
+output
 
 # ignoring plex
 docker/plex
