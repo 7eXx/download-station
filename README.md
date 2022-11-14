@@ -24,7 +24,7 @@ Install all dependencies
 $ pip3 install -r requirements
 ```
 
-### Usage
+## Usage
 This project use python to build the template for the docker compose file.
 ```
 $ python build.py
@@ -32,6 +32,13 @@ $ python build.py
 or
 ```
 $ python build.py --prod PROD
+```
+
+## Deploy the generated output
+To deploy the generated docker compose file use the rsync command:
+```
+$ ssh synology@192.168.0.100 mkdir -p ~/download-station
+$ rsync output/docker-compose.prod.yml synology@192.168.0.100:~/download-station/docker-compose.prod.yml
 ```
 
 ## Plex
