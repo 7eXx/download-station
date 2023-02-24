@@ -27,7 +27,7 @@ else:
     }
     building_env = 'prod'
 
-output_file = f'output/docker-compose.{building_env}.yml'
+output_file = f'output/docker-compose.yml'
 
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
