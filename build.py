@@ -14,7 +14,10 @@ output_dir = 'output'
 
 if args['prod'] is None:
     print('Building using standard env')
-    env_variables = {**dotenv_values(".env")}
+    env_variables = {
+        **dotenv_values(".env"),
+        **dotenv_values(".env.local")
+    }
     building_env = 'dev'
 else:
     print('Building using production')

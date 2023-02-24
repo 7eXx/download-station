@@ -14,6 +14,7 @@ services:
       - {{ PLEX_CONFIG_PATH }}:/config
       - {{ PLEX_TV_SERIES_PATH }}:/tv
       - {{ PLEX_TV_MOVIES_PATH }}:/movies
+      - {{ PLEX_PHOTO_PATH }}:/photo
     {% if PLEX_ENCODING_ENABLE == 'true' %}
     devices:
       - /dev/dri:/dev/dri
@@ -74,4 +75,19 @@ services:
       - donotstart
     {% endif %}
     restart: unless-stopped
+
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    environment:
+      - PUID={{ USER_ID }}
+      - PGID={{ GROUP_ID }}
+    volumes:
+      - {{ FILE_BROWSER_ROOT_PATH }}
+      - {{ FILE_BROWSER_DB_PATH }}:/database/filebrowser.db
+      - {{ FILE_BROWSER_SETTINGS_PATH }}:/config/settings.json
+    ports:
+      - {{ FILE_BROWSER_PORT }}:8080
+
+
     
