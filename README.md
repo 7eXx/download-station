@@ -38,7 +38,13 @@ $ python build.py --prod PROD
 To deploy the generated docker compose file use the rsync command:
 ```
 $ ssh synology@192.168.0.100 mkdir -p ~/download-station
-$ rsync output/docker-compose.prod.yml synology@192.168.0.100:~/download-station/docker-compose.prod.yml
+$ rsync output/docker-compose.yml synology@192.168.0.100:~/download-station/docker-compose.yml
+```
+
+### Deploy docker compose 
+To deploy the docker compose file generated use the command:
+```
+$ docker compose --project-directory ./ --file output/docker-compose.yml up -d
 ```
 
 ## Plex

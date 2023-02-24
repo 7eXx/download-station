@@ -14,7 +14,10 @@ output_dir = 'output'
 
 if args['prod'] is None:
     print('Building using standard env')
-    env_variables = {**dotenv_values(".env")}
+    env_variables = {
+        **dotenv_values(".env"),
+        **dotenv_values(".env.local")
+    }
     building_env = 'dev'
 else:
     print('Building using production')
@@ -24,7 +27,7 @@ else:
     }
     building_env = 'prod'
 
-output_file = f'output/docker-compose.{building_env}.yml'
+output_file = f'output/docker-compose.yml'
 
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
