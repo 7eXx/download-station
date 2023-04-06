@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Synology",
+    "colour": "#fafbfc",
+    "url": "https://synology-nas.home:5001/",
+    "description": null,
+    "appid": "8521f6e426ad621f27a6b48be57a3c6056c9cfd3",
+    "appdescription": "Synology is a popular NAS appliance"
+  },
+  {
+    "title": "Pi-hole",
+    "colour": "#161b1f",
+    "url": "http://raspi-home.home:8080/admin/",
+    "description": "{\"enabled\":\"0\",\"dataonly\":\"1\",\"override_url\":null,\"apikey\":null}",
+    "appid": "b89920409bdce40e08ba1023480b0546061cd577",
+    "appdescription": "Pi-hole is a Linux network-level advertisement and internet tracker blocking application which acts as a DNS sinkhole, intended for use on a private network."
+  },
+  {
+    "title": "Transmission",
+    "colour": "#161b1f",
+    "url": "http://synology-nas.home:9091",
+    "description": "{\"enabled\":\"0\",\"dataonly\":\"1\",\"override_url\":null,\"username\":null,\"password\":null}",
+    "appid": "34899a33e3d7e33e1966b921ea250350fc71591a",
+    "appdescription": "Transmission is a BitTorrent client which features a variety of user interfaces on top of a cross-platform back-end."
+  },
+  {
+    "title": "Login - pyLoad Webinterface",
+    "colour": "#161b1f",
+    "url": "http://synology-nas.home:8888/",
+    "description": null,
+    "appid": "0e859100d4a94f55ca42b82db2dadce415aff7ad",
+    "appdescription": "Free and Open Source download manager written in Pure Python and designed to be extremely lightweight, fully customizable and remotely manageable"
+  },
+  {
+    "title": "Plex",
+    "colour": "#161b1f",
+    "url": "http://synology-nas.home:32400",
+    "description": "{\"enabled\":\"0\",\"dataonly\":\"1\",\"override_url\":null,\"token\":null,\"ignore_tls\":\"0\"}",
+    "appid": "aebda823a279b219476c565be863d83739999502",
+    "appdescription": "Plex media server allows you to aggregate all your personal media and access it anywhere you go. Enjoy your own content on all your devices with Plex."
+  },
+  {
+    "title": "AVM Fritzbox",
+    "colour": "#161b1f",
+    "url": "http://fritzbox.home/",
+    "description": "{\"enabled\":\"1\",\"availablestats\":[\"NewConnectionStatus\"]}",
+    "appid": "e8354374b262e6f1055e7412d11f24a164a50f79",
+    "appdescription": "\"The\" Fritzbox, stylised as FRITZ!Box, is a series of residential gateway devices produced by the German company AVM GmbH. \r\nFRITZ!OS is the FRITZ!Box operating system and can be easily controlled via your browser. User-friendly menus, easy-to-understand wizards, and the optional advanced mode come in handy in all scenarios."
+  },
+  {
+    "title": "Archer C7",
+    "colour": "#fafbfc",
+    "url": "http://archer-c7.home/",
+    "description": null,
+    "appid": "77eb1db6cb81b3cb088d36ab7aae8f230dcfaa28",
+    "appdescription": "A router is a networking device that forwards data packets between computer networks."
+  },
+  {
+    "title": "CUPS",
+    "colour": "#fafbfc",
+    "url": "http://raspi-home.home:631/",
+    "description": null,
+    "appid": "ba8ed4dc9e438b22c9456a78a2c09652955be42c",
+    "appdescription": "The standards-based, open source printing system developed by Apple for iOS®, iPadOS®, and macOS®. CUPS uses IPP Everywhere™ to support printing to local and network printers."
+  },
+  {
+    "title": "FileBrowser",
+    "colour": "#161b1f",
+    "url": "http://synology-nas.home:18080",
+    "description": null,
+    "appid": "ba05dd8e070851895ee6184eb9778cfa0753a490",
+    "appdescription": "filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. It can be used as a standalone app or as a middleware."
+  },
+  {
+    "title": "Portainer",
+    "colour": "#161b1f",
+    "url": "https://synology-nas.home:9443/",
+    "description": "{\"enabled\":\"0\",\"dataonly\":\"1\",\"override_url\":null,\"username\":null,\"password\":null,\"ignore_tls\":\"0\"}",
+    "appid": "07b796b3a10eaa8b6f485ed2379187a39400b459",
+    "appdescription": "Portainer is a simple management solution for Docker. Easily manage your Docker hosts and Docker Swarm clusters via Portainer web user interface."
+  }
+]

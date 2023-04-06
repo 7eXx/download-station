@@ -88,6 +88,16 @@ services:
       - {{ FILE_BROWSER_SETTINGS_PATH }}:/config/settings.json
     ports:
       - {{ FILE_BROWSER_PORT }}:80
-
-
     
+  heimdall:
+    image: linuxserver/heimdall
+    container_name: heimdall
+    environment:
+      - PUID={{ USER_ID }}
+      - PGID={{ GROUP_ID }}
+      - TZ=Europe/Rome
+    volumes:
+      - {{ HEIMDALL_CONFIG_PATH }}:/config
+    ports:
+      - {{ HEIMDALL_HTTP_PORT }}:80
+      - {{ HEIMDALL_HTTPS_PORT }}:8443

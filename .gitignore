@@ -20,5 +20,8 @@ docker/pyload
 # ignoring amule folders
 docker/amule
 
+# Heimdall files
+docker/heimdall/config
+
 # built docker compose file
 docker-compose.yml
