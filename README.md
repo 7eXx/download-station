@@ -5,6 +5,8 @@ This repository contains some useful tools for download:
    - [x] Transmission
    - [x] Pyload
    - [x] Amule
+   - [x] Filebrowser
+   - [x] Heimdall
    - [ ] XdccDownload
 
 All these tools are implemented as docker containers.
@@ -46,6 +48,10 @@ To deploy the docker compose file generated use the command:
 ```
 $ docker compose --project-directory ./ --file output/docker-compose.yml up -d
 ```
+To stop
+```
+$ docker compose --project-directory ./ --file output/docker-compose down -v
+```
 
 ## Plex
 Create a torrent transmission service using the variables in dot env file.  
@@ -69,3 +75,8 @@ Make sure to create the local folders for:
 - complete
 
 Default behavior of emule is to not run this service.
+
+## Filebrower
+
+## Heimdall
+Import configuration files from **docker/heimdall/HeimdallExport.json**
