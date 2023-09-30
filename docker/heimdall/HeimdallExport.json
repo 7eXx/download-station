@@ -8,12 +8,44 @@
     "appdescription": "Synology is a popular NAS appliance"
   },
   {
+    "title": "Nginx Proxy Manager",
+    "colour": "#fafbfc",
+    "url": "http://npm.texhome.lan/",
+    "description": "{\"enabled\":\"0\",\"override_url\":null,\"email\":null,\"password\":null}",
+    "appid": "cbfad988a16a9fbcc1812bc206afcc1f73dd36de",
+    "appdescription": "This project comes as a pre-built docker image that enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt."
+  },
+  {
     "title": "Pi-hole",
     "colour": "#161b1f",
     "url": "http://raspi-home.home:8080/admin/",
     "description": "{\"enabled\":\"0\",\"dataonly\":\"1\",\"override_url\":null,\"apikey\":null}",
     "appid": "b89920409bdce40e08ba1023480b0546061cd577",
     "appdescription": "Pi-hole is a Linux network-level advertisement and internet tracker blocking application which acts as a DNS sinkhole, intended for use on a private network."
+  },
+  {
+    "title": "AVM Fritzbox",
+    "colour": "#161b1f",
+    "url": "http://fritzbox.home/",
+    "description": "{\"enabled\":\"1\",\"availablestats\":[\"NewConnectionStatus\"]}",
+    "appid": "e8354374b262e6f1055e7412d11f24a164a50f79",
+    "appdescription": "\"The\" Fritzbox, stylised as FRITZ!Box, is a series of residential gateway devices produced by the German company AVM GmbH. \r\nFRITZ!OS is the FRITZ!Box operating system and can be easily controlled via your browser. User-friendly menus, easy-to-understand wizards, and the optional advanced mode come in handy in all scenarios."
+  },
+  {
+    "title": "Archer C7",
+    "colour": "#fafbfc",
+    "url": "http://archer-c7.home/",
+    "description": null,
+    "appid": "77eb1db6cb81b3cb088d36ab7aae8f230dcfaa28",
+    "appdescription": "A router is a networking device that forwards data packets between computer networks."
+  },
+  {
+    "title": "Portainer",
+    "colour": "#161b1f",
+    "url": "https://synology-nas.home:9443/",
+    "description": "{\"enabled\":\"0\",\"dataonly\":\"1\",\"override_url\":null,\"username\":null,\"password\":null,\"ignore_tls\":\"0\"}",
+    "appid": "07b796b3a10eaa8b6f485ed2379187a39400b459",
+    "appdescription": "Portainer is a simple management solution for Docker. Easily manage your Docker hosts and Docker Swarm clusters via Portainer web user interface."
   },
   {
     "title": "Transmission",
@@ -40,30 +72,6 @@
     "appdescription": "Plex media server allows you to aggregate all your personal media and access it anywhere you go. Enjoy your own content on all your devices with Plex."
   },
   {
-    "title": "AVM Fritzbox",
-    "colour": "#161b1f",
-    "url": "http://fritzbox.home/",
-    "description": "{\"enabled\":\"1\",\"availablestats\":[\"NewConnectionStatus\"]}",
-    "appid": "e8354374b262e6f1055e7412d11f24a164a50f79",
-    "appdescription": "\"The\" Fritzbox, stylised as FRITZ!Box, is a series of residential gateway devices produced by the German company AVM GmbH. \r\nFRITZ!OS is the FRITZ!Box operating system and can be easily controlled via your browser. User-friendly menus, easy-to-understand wizards, and the optional advanced mode come in handy in all scenarios."
-  },
-  {
-    "title": "Archer C7",
-    "colour": "#fafbfc",
-    "url": "http://archer-c7.home/",
-    "description": null,
-    "appid": "77eb1db6cb81b3cb088d36ab7aae8f230dcfaa28",
-    "appdescription": "A router is a networking device that forwards data packets between computer networks."
-  },
-  {
-    "title": "CUPS",
-    "colour": "#fafbfc",
-    "url": "http://raspi-home.home:631/",
-    "description": null,
-    "appid": "ba8ed4dc9e438b22c9456a78a2c09652955be42c",
-    "appdescription": "The standards-based, open source printing system developed by Apple for iOS®, iPadOS®, and macOS®. CUPS uses IPP Everywhere™ to support printing to local and network printers."
-  },
-  {
     "title": "FileBrowser",
     "colour": "#161b1f",
     "url": "http://synology-nas.home:18080",
@@ -72,11 +80,11 @@
     "appdescription": "filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. It can be used as a standalone app or as a middleware."
   },
   {
-    "title": "Portainer",
-    "colour": "#161b1f",
-    "url": "https://synology-nas.home:9443/",
-    "description": "{\"enabled\":\"0\",\"dataonly\":\"1\",\"override_url\":null,\"username\":null,\"password\":null,\"ignore_tls\":\"0\"}",
-    "appid": "07b796b3a10eaa8b6f485ed2379187a39400b459",
-    "appdescription": "Portainer is a simple management solution for Docker. Easily manage your Docker hosts and Docker Swarm clusters via Portainer web user interface."
+    "title": "CUPS",
+    "colour": "#fafbfc",
+    "url": "http://raspi-home.home:631/",
+    "description": null,
+    "appid": "ba8ed4dc9e438b22c9456a78a2c09652955be42c",
+    "appdescription": "The standards-based, open source printing system developed by Apple for iOS®, iPadOS®, and macOS®. CUPS uses IPP Everywhere™ to support printing to local and network printers."
   }
 ]
