@@ -8,6 +8,14 @@
     "appdescription": "Synology is a popular NAS appliance"
   },
   {
+    "title": "Shelly Dashboard",
+    "colour": "#161b1f",
+    "url": "http://shelly.home:80",
+    "description": null,
+    "appid": "null",
+    "appdescription": null
+  },
+  {
     "title": "Nginx Proxy Manager",
     "colour": "#fafbfc",
     "url": "http://npm.texhome.lan/",
