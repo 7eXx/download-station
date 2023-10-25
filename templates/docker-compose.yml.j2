@@ -52,7 +52,7 @@ services:
       - {{ PYLOAD_DOWNLOAD_PATH }}:/downloads
     ports:
       - {{ PYLOAD_WEB_PORT }}:8000
-      - {{ PYLOAD_AUX_POR }}:7227 #optional
+      - {{ PYLOAD_AUX_PORT }}:7227 #optional
     restart: unless-stopped
 
   amule:
