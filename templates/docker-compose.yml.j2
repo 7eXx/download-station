@@ -15,10 +15,10 @@ services:
       - {{ PLEX_TV_SERIES_PATH }}:/tv
       - {{ PLEX_TV_MOVIES_PATH }}:/movies
       - {{ PLEX_PHOTO_PATH }}:/photo
-    {% if PLEX_ENCODING_ENABLE == 'true' %}
+{% if PLEX_ENCODING_ENABLE == 'true' %}
     devices:
       - /dev/dri:/dev/dri
-    {% endif %}
+{% endif %}
     restart: unless-stopped
 
   transmission:
@@ -70,10 +70,10 @@ services:
       - {{ AMULE_WEB_PORT }}:4711
       - {{ AMULE_TCP_PORT }}:4662
       - {{ AMULE_UDP_PORT }}:4672/udp
-    {% if AMULE_ENABLE == 'false' %}
+{% if AMULE_ENABLE == 'false' %}
     profiles:
       - donotstart
-    {% endif %}
+{% endif %}
     restart: unless-stopped
 
   filebrowser:
