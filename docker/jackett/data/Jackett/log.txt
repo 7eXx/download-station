@@ -1,0 +1,88 @@
+2024-08-13 20:13:19.3949 Info Starting Jackett v0.22.442
+2024-08-13 20:13:19.9360 Info Environment version: 8.0.7 (/app/Jackett/)
+2024-08-13 20:13:19.9470 Info OS version: Unix 5.10.102.1 (64bit OS) (64bit process)
+2024-08-13 20:13:19.9537 Info Jackett variant: CoreLinuxMuslAmdx64
+2024-08-13 20:13:19.9537 Info File /etc/issue: Welcome to Alpine Linux 3.20
+2024-08-13 20:13:19.9537 Info Running in Docker: Yes (image build: v0.22.442-ls496)
+2024-08-13 20:13:19.9653 Info ThreadPool MaxThreads: 32767 workerThreads, 1000 completionPortThreads
+2024-08-13 20:13:19.9653 Info App config/log directory: /config/Jackett
+2024-08-13 20:13:19.9741 Info Using proxy: Disabled
+2024-08-13 20:13:19.9741 Info Using FlareSolverr: No
+2024-08-13 20:13:19.9741 Info Using HTTP Client: HttpWebClient2
+2024-08-13 20:13:19.9898 Info Loading Native indexers ...
+2024-08-13 20:13:20.0313 Info Loaded 71 Native indexers.
+2024-08-13 20:13:20.0375 Info Loading Cardigann indexers from: /config/cardigann/definitions/, /etc/xdg/cardigan/definitions/, /app/Jackett/Definitions
+2024-08-13 20:13:22.3819 Info Loaded 541 Cardigann indexers.
+2024-08-13 20:13:22.3860 Info Loaded 612 indexers in total
+2024-08-13 20:13:22.7041 Info Adding aggregate indexer ('all' indexer) ...
+2024-08-13 20:13:22.7177 Info Adding filter indexer ('type:public' indexer) ...
+2024-08-13 20:13:22.7177 Info Adding filter indexer ('type:private' indexer) ...
+2024-08-13 20:13:22.7260 Info Adding filter indexer ('type:semi-public' indexer) ...
+2024-08-13 20:13:22.8465 Warn No XML encryptor configured. Key {734cf7b4-01df-4e38-9b37-a3735fd6a871} may be persisted to storage in unencrypted form.
+2024-08-13 20:13:22.9049 Info Jackett startup finished in 3.761 s
+2024-08-13 20:36:52.2786 Info Test search in LimeTorrents => Found 150 releases [890ms]
+2024-08-13 20:36:52.3179 Info Test search in Torrent Downloads => Found 336 releases [929ms]
+2024-08-13 20:36:52.3375 Info Test search in YourBittorrent => Found 75 releases [949ms]
+2024-08-13 20:36:56.6101 Info Test search in Il Corsaro Nero => Found 120 releases [5222ms]
+2024-08-13 20:36:58.9968 Info Test search in 1337x => Found 80 releases [7608ms]
+2024-08-13 20:37:00.2428 Info Test search in kickasstorrents.to => Found 0 releases [8854ms]
+2024-08-13 20:37:00.2692 Error System.Exception: Test search in kickasstorrents.to => Found no results while trying to browse this tracker. This may be an issue with the indexer, or other indexer settings such as search freeleech only etc.
+
+[v0.22.442.0] System.Exception: Test search in kickasstorrents.to => Found no results while trying to browse this tracker. This may be an issue with the indexer, or other indexer settings such as search freeleech only etc.
+   at Jackett.Common.Services.IndexerManagerService.TestIndexer(String name) in ./Jackett.Common/Services/IndexerManagerService.cs:line 332
+   at Jackett.Server.Controllers.IndexerApiController.Test() in ./Jackett.Server/Controllers/IndexerApiController.cs:line 132
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jackett.Server.Middleware.CustomExceptionHandler.Invoke(HttpContext httpContext) in ./Jackett.Server/Middleware/CustomExceptionHandler.cs:line 26
+
+2024-08-13 20:43:00.2829 Warn Some of the categories provided are unsupported in Il Corsaro Nero: 2010,2020,2045,2050,2060
+2024-08-13 20:43:05.3190 Info Torznab search in Il Corsaro Nero => Found 48 releases [5038ms]
+2024-08-13 20:43:06.4228 Warn Some of the categories provided are unsupported in Il Corsaro Nero: 2010,2020,2045,2050,2060
+2024-08-13 20:43:06.4285 Info Torznab search in Il Corsaro Nero => Found 48 releases (from cache) [5ms]
+2024-08-13 20:43:39.4723 Warn Some of the categories provided are unsupported in Il Corsaro Nero: 2010,2020,2045,2050,2060
+2024-08-13 20:43:39.4771 Info Torznab search in Il Corsaro Nero => Found 48 releases (from cache) [4ms]
+2024-08-13 20:44:27.0662 Warn Some of the categories provided are unsupported in Il Corsaro Nero: 2010,2020,2045,2050,2060
+2024-08-13 20:44:31.8583 Info Torznab search in Il Corsaro Nero for Dark Knight 2008 => Found 4 releases [4792ms]
+2024-08-13 20:50:34.7021 Info Manual search in LimeTorrents => Found 150 releases [318ms]
+2024-08-13 20:51:43.1041 Warn Some of the categories provided are unsupported in Il Corsaro Nero: 2010,2020,2045,2050,2060
+2024-08-13 20:51:43.1041 Info Torznab search in Il Corsaro Nero => Found 48 releases (from cache) [4ms]
+2024-08-13 20:52:10.7453 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:52:11.0667 Info Torznab search in LimeTorrents => Found 0 releases [321ms]
+2024-08-13 20:52:18.5180 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:52:18.5180 Info Torznab search in LimeTorrents => Found 0 releases (from cache) [4ms]
+2024-08-13 20:52:33.0637 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:52:33.1706 Info Torznab search in LimeTorrents => Found 0 releases [106ms]
+2024-08-13 20:52:36.1036 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:52:36.1036 Info Torznab search in LimeTorrents => Found 0 releases (from cache) [5ms]
+2024-08-13 20:52:38.7471 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:52:38.7471 Info Torznab search in LimeTorrents => Found 0 releases (from cache) [5ms]
+2024-08-13 20:52:41.0672 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:52:41.0672 Info Torznab search in LimeTorrents => Found 0 releases (from cache) [5ms]
+2024-08-13 20:52:43.0734 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:52:43.0734 Info Torznab search in LimeTorrents => Found 0 releases (from cache) [4ms]
+2024-08-13 20:53:00.6939 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:53:00.6939 Info Torznab search in LimeTorrents => Found 0 releases (from cache) [5ms]
+2024-08-13 20:53:40.1473 Warn Some of the categories provided are unsupported in LimeTorrents: 2010,2020,2030,2040,2045,2050,2060
+2024-08-13 20:53:40.1473 Info Torznab search in LimeTorrents => Found 0 releases (from cache) [4ms]
+2024-08-13 20:53:52.8634 Info Manual search in Il Corsaro Nero => Found 120 releases [4913ms]
+2024-08-13 20:56:16.9692 Warn Some of the categories provided are unsupported in 1337x: 2020,2050
+2024-08-13 20:56:24.2911 Info Torznab search in 1337x => Found 20 releases [7321ms]
+2024-08-13 20:56:26.5285 Warn Some of the categories provided are unsupported in 1337x: 2020,2050
+2024-08-13 20:56:26.5343 Info Torznab search in 1337x => Found 20 releases (from cache) [5ms]
+2024-08-13 21:02:02.0115 Warn Some of the categories provided are unsupported in 1337x: 2020,2050
+2024-08-13 21:02:02.0115 Warn Some of the categories provided are unsupported in Il Corsaro Nero: 2010,2020,2045,2050,2060
+2024-08-13 21:02:06.7909 Info Torznab search in Il Corsaro Nero for Dune Part Two 2024 => Found 3 releases [4779ms]
+2024-08-13 21:02:09.3855 Info Torznab search in 1337x for Dune: Part Two 2024 => Found 80 releases [7374ms]
+2024-08-13 21:03:42.9254 Warn Some of the categories provided are unsupported in 1337x: 2020,2050
+2024-08-13 21:03:42.9254 Warn Some of the categories provided are unsupported in Il Corsaro Nero: 2010,2020,2045,2050,2060
+2024-08-13 21:03:42.9333 Info Torznab search in 1337x for Dune: Part Two 2024 => Found 80 releases (from cache) [7ms]
+2024-08-13 21:03:42.9333 Info Torznab search in Il Corsaro Nero for Dune Part Two 2024 => Found 3 releases (from cache) [8ms]
+2024-08-13 21:10:22.5146 Info Jackett stopped

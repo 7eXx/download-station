@@ -54,6 +54,22 @@ services:
     ports:
       - {{ RADARR_PORT }}:7878
     restart: unless-stopped
+
+  jackett:
+    image: lscr.io/linuxserver/jackett
+    container_name: jackett
+    environment:
+      - PUID={{ USER_ID }}
+      - PGID={{ GROUP_ID }}
+      - TZ=Europe/Rome
+      - AUTO_UPDATE=true
+      - RUN_OPTS=
+    volumes:
+      - {{ JACKETT_CONFIG_PATH }}:/config
+      - {{ JACKETT_DOWNLOAD_PATH }}:/downloads
+    ports:
+      - {{ JACKETT_PORT }}:9117
+    restart: unless-stopped
   
   pyload:
     image: lscr.io/linuxserver/pyload
