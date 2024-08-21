@@ -2,7 +2,7 @@
 version: "3.8"
 services:
   plex:
-    image: lscr.io/linuxserver/plex
+    image: linuxserver/plex
     container_name: plex
     environment:
       - PUID={{ USER_ID }}
@@ -22,7 +22,7 @@ services:
     restart: unless-stopped
 
   transmission:
-    image: lscr.io/linuxserver/transmission
+    image: linuxserver/transmission
     container_name: transmission
     environment:
       - PUID={{ USER_ID }}
@@ -30,6 +30,10 @@ services:
       - TZ=Europe/Rome
       - USER={{ TRANSMISSION_USE }} #optional
       - PASS={{ TRANSMISSION_PASSWORD }} #optional
+      - TRANSMISSION_WEB_HOME= #optional
+      - WHITELIST= #optional
+      - PEERPORT= #optional
+      - HOST_WHITELIST= #optional
     volumes:
       - {{ TRANSMISSION_CONFIG_PATH }}:/config
       - {{ TRANSMISSION_DOWNLOADS_PATH }}:/downloads
@@ -41,7 +45,7 @@ services:
     restart: unless-stopped
 
   radarr:
-    image: lscr.io/linuxserver/radarr:latest
+    image: linuxserver/radarr:latest
     container_name: radarr
     environment:
       - PUID={{ USER_ID }}
@@ -56,7 +60,7 @@ services:
     restart: unless-stopped
 
   jackett:
-    image: lscr.io/linuxserver/jackett
+    image: linuxserver/jackett
     container_name: jackett
     environment:
       - PUID={{ USER_ID }}
@@ -72,7 +76,7 @@ services:
     restart: unless-stopped
   
   pyload:
-    image: lscr.io/linuxserver/pyload
+    image: linuxserver/pyload-ng
     container_name: pyload
     environment:
       - PUID={{ USER_ID }}
